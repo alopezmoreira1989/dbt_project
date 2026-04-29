@@ -1,16 +1,29 @@
-select
+with source as (
 
-    --primary key
-    part_key as part_key
+    select *
+    from {{ ref('stg_part') }}
 
-    --attributes
-    , part_name as part_name
-    , part_mfgr as manufacturer
-    , part_size as part_size
-    , part_type  as part_type
-    , part_container part_container
+)
 
-    --reference price
-    , part_retail_price as retail_price
+, final as (
 
-from {{ ref('stg_part') }}
+    select
+
+        -- primary key
+        part_key
+
+        -- attributes
+        , part_name
+        , part_mfgr as manufacturer
+        , part_size
+        , part_type
+        , part_container
+
+        -- reference price
+        , part_retail_price as retail_price
+
+    from source
+
+)
+
+select * from final

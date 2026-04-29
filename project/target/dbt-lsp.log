@@ -27199,3 +27199,659 @@ SELECT * FROM FINAL
 08:12:58.511015 [info ]: Started scheduling
 08:12:58.511096 [info ]: Finished scheduling [  0.00s]
 08:12:58.512740 [info ]: Cached model count updated: 16 models (accurate)
+==================== 2026-04-24T10:38:56.913119Z | cee0e5b6-3ac5-4d0d-9768-35f4315d655e ====================
+10:38:56.913202 [info ]: Starting dbt LSP server
+10:38:56.913234 [info ]: Connecting to LSP client on port 8000
+10:38:56.915162 [info ]: Successfully connected to LSP client
+10:38:56.915176 [info ]: Creating LSP service...
+10:38:56.974209 [info ]: Creating LSP server...
+10:38:56.974249 [info ]: Starting LSP server...
+10:38:58.169361 [info ]: Loading ~/.dbt/profiles.yml
+10:38:58.219978 [info ]: Started loading project
+10:38:58.220727 [info ]: Loading ~/.dbt/profiles.yml
+10:38:58.252311 [info ]: Loading packages.yml
+10:38:58.252531 [debug]:    Started loading packages
+10:38:58.297745 [debug]:     Loaded [  0.05s] packages
+10:38:58.298711 [info ]: Started parsing
+10:38:59.014814 [info ]: Finished loading project [  0.79s]
+10:38:59.035300 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.01s]
+10:38:59.049486 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.01s]
+10:38:59.059536 [debug]: Finished parsing models\s2_intermediate\_int_tpch.yml [  0.01s]
+10:38:59.072937 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.01s]
+10:38:59.088049 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.01s]
+10:38:59.099113 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.01s]
+10:38:59.109196 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.01s]
+10:38:59.120636 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.01s]
+10:38:59.132679 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.01s]
+10:38:59.144250 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.01s]
+10:38:59.155758 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.01s]
+10:38:59.166528 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.01s]
+10:38:59.177385 [debug]: Finished parsing models\s2_intermediate\int_lineitem_enriched.sql [  0.01s]
+10:38:59.188255 [debug]: Finished parsing models\s3_marts\dim_customer.sql [  0.01s]
+10:38:59.199609 [debug]: Finished parsing models\s3_marts\dim_date.sql [  0.01s]
+10:38:59.210931 [debug]: Finished parsing models\s3_marts\dim_location.sql [  0.01s]
+10:38:59.219291 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.01s]
+10:38:59.230879 [debug]: Finished parsing models\s3_marts\dim_part_supplier.sql [  0.01s]
+10:38:59.240648 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.01s]
+10:38:59.254861 [debug]: Finished parsing models\s3_marts\fact_lineitem.sql [  0.01s]
+10:38:59.265322 [debug]: Finished parsing analyses\customer_value.sql [  0.01s]
+10:38:59.276289 [debug]: Finished parsing analyses\pricing_analysis.sql [  0.01s]
+10:38:59.286315 [debug]: Finished parsing analyses\profitability.sql [  0.01s]
+10:38:59.295857 [debug]: Finished parsing analyses\revenue_trend.sql [  0.01s]
+10:38:59.309136 [debug]: Finished parsing analyses\supplier_performance.sql [  0.01s]
+10:38:59.310308 [info ]: Finished parsing [  1.01s]
+10:38:59.311043 [info ]: Cached model count updated: 16 models (estimate)
+10:38:59.311056 [info ]: Cached model count updated: 16 models (accurate)
+10:38:59.311133 [info ]: Started scheduling
+10:38:59.311384 [info ]: Finished scheduling [  0.00s]
+10:38:59.311408 [debug]: Compilation - 9 nodes selected: {"model.project.int_lineitem_enriched", "model.project.stg_customer", "model.project.stg_lineitem", "model.project.stg_nation", "model.project.stg_orders", "model.project.stg_part", "model.project.stg_partsupp", "model.project.stg_region", "model.project.stg_supplier"}
+10:38:59.311446 [info ]: Started scheduling
+10:38:59.311578 [info ]: Finished scheduling [  0.00s]
+10:38:59.311773 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+10:38:59.311865 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+10:38:59.311899 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+10:38:59.311925 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+10:38:59.311949 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+10:38:59.311976 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+10:38:59.312018 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+10:38:59.312066 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+10:38:59.519415 [info ]: Started building task graph
+10:38:59.519596 [info ]: Finished building task graph [  0.00s]
+10:38:59.519860 [info ]: Started rendering (9 nodes)
+10:38:59.519897 [info ]: Started model analytics_prod.int_lineitem_enriched
+10:38:59.519927 [debug]: Started rendering model analytics_prod.int_lineitem_enriched
+10:38:59.519962 [info ]: Started model analytics_prod.stg_supplier
+10:38:59.519969 [debug]: Started rendering model analytics_prod.stg_supplier
+10:38:59.519977 [info ]: Started model analytics_prod.stg_region
+10:38:59.519981 [debug]: Started rendering model analytics_prod.stg_region
+10:38:59.519989 [info ]: Started model analytics_prod.stg_partsupp
+10:38:59.519993 [debug]: Started rendering model analytics_prod.stg_partsupp
+10:38:59.519999 [info ]: Started model analytics_prod.stg_part
+10:38:59.520003 [debug]: Started rendering model analytics_prod.stg_part
+10:38:59.520009 [info ]: Started model analytics_prod.stg_orders
+10:38:59.520013 [debug]: Started rendering model analytics_prod.stg_orders
+10:38:59.520019 [info ]: Started model analytics_prod.stg_nation
+10:38:59.520023 [debug]: Started rendering model analytics_prod.stg_nation
+10:38:59.520032 [info ]: Started model analytics_prod.stg_lineitem
+10:38:59.520037 [debug]: Started rendering model analytics_prod.stg_lineitem
+10:38:59.520043 [info ]: Started model analytics_prod.stg_customer
+10:38:59.520047 [debug]: Started rendering model analytics_prod.stg_customer
+10:38:59.524733 [debug]: Compiled SQL for node model.project.int_lineitem_enriched at target\.lsp\compiled\models\s2_intermediate\int_lineitem_enriched.sql
+10:38:59.525128 [debug]: Finished rendering [  0.01s] model analytics_prod.int_lineitem_enriched [success]
+10:38:59.525217 [info ]: Started analyzing (9 nodes)
+10:38:59.525236 [debug]: Started analyzing model analytics_prod.int_lineitem_enriched
+10:38:59.528458 [debug]: Compiled SQL for node model.project.stg_nation at target\.lsp\compiled\models\s1_staging\stg_nation.sql
+10:38:59.529215 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_nation [success]
+10:38:59.529273 [debug]: Started analyzing model analytics_prod.stg_nation
+10:38:59.529350 [debug]: Compiled SQL for node model.project.stg_region at target\.lsp\compiled\models\s1_staging\stg_region.sql
+10:38:59.529831 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_region [success]
+10:38:59.529863 [debug]: Started analyzing model analytics_prod.stg_region
+10:38:59.529964 [debug]: Compiled SQL for node model.project.stg_supplier at target\.lsp\compiled\models\s1_staging\stg_supplier.sql
+10:38:59.530128 [debug]: Compiled SQL for node model.project.stg_customer at target\.lsp\compiled\models\s1_staging\stg_customer.sql
+10:38:59.531946 [debug]: Compiled SQL for node model.project.stg_lineitem at target\.lsp\compiled\models\s1_staging\stg_lineitem.sql
+10:38:59.532275 [debug]: Compiled SQL for node model.project.stg_partsupp at target\.lsp\compiled\models\s1_staging\stg_partsupp.sql
+10:38:59.533542 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_supplier [success]
+10:38:59.533791 [debug]: Started analyzing model analytics_prod.stg_supplier
+10:38:59.533904 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_customer [success]
+10:38:59.533920 [debug]: Started analyzing model analytics_prod.stg_customer
+10:38:59.533936 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_lineitem [success]
+10:38:59.533944 [debug]: Started analyzing model analytics_prod.stg_lineitem
+10:38:59.533957 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_partsupp [success]
+10:38:59.533965 [debug]: Started analyzing model analytics_prod.stg_partsupp
+10:38:59.534563 [debug]: Compiled SQL for node model.project.stg_part at target\.lsp\compiled\models\s1_staging\stg_part.sql
+10:38:59.536396 [debug]: Finished rendering [  0.02s] model analytics_prod.stg_part [success]
+10:38:59.536464 [debug]: Started analyzing model analytics_prod.stg_part
+10:38:59.537828 [debug]: Compiled SQL for node model.project.stg_orders at target\.lsp\compiled\models\s1_staging\stg_orders.sql
+10:38:59.543313 [debug]: Finished rendering [  0.02s] model analytics_prod.stg_orders [success]
+10:38:59.543352 [info ]: Finished rendering [  0.02s] (9 nodes, 0 skipped, 0 errors)
+10:38:59.543402 [debug]: Started analyzing model analytics_prod.stg_orders
+10:38:59.549746 [info ]:  Succeeded [  0.03s] model analytics_prod.stg_lineitem (table)
+10:38:59.549800 [debug]: Finished analyzing [  0.02s] model analytics_prod.stg_lineitem [success]
+10:38:59.549838 [info ]:  Succeeded [  0.03s] model analytics_prod.stg_supplier (table)
+10:38:59.549849 [debug]: Finished analyzing [  0.02s] model analytics_prod.stg_supplier [success]
+10:38:59.549860 [info ]:  Succeeded [  0.03s] model analytics_prod.stg_customer (table)
+10:38:59.549869 [debug]: Finished analyzing [  0.02s] model analytics_prod.stg_customer [success]
+10:38:59.549881 [info ]:  Succeeded [  0.03s] model analytics_prod.stg_orders (table)
+10:38:59.549891 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_orders [success]
+10:38:59.549904 [info ]:  Succeeded [  0.03s] model analytics_prod.stg_nation (table)
+10:38:59.549916 [debug]: Finished analyzing [  0.02s] model analytics_prod.stg_nation [success]
+10:38:59.549928 [info ]:  Succeeded [  0.03s] model analytics_prod.stg_partsupp (table)
+10:38:59.549936 [debug]: Finished analyzing [  0.02s] model analytics_prod.stg_partsupp [success]
+10:38:59.549950 [info ]:  Succeeded [  0.03s] model analytics_prod.stg_region (table)
+10:38:59.549959 [debug]: Finished analyzing [  0.02s] model analytics_prod.stg_region [success]
+10:38:59.550225 [info ]:  Succeeded [  0.03s] model analytics_prod.stg_part (table)
+10:38:59.550242 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_part [success]
+10:38:59.566827 [info ]:  Succeeded [  0.05s] model analytics_prod.int_lineitem_enriched (view)
+10:38:59.566877 [debug]: Finished analyzing [  0.04s] model analytics_prod.int_lineitem_enriched [success]
+10:38:59.566888 [info ]: Finished analyzing [  0.04s] (9 nodes, 0 skipped, 0 errors)
+10:38:59.574099 [info ]: Started scheduling
+10:38:59.574215 [info ]: Finished scheduling [  0.00s]
+10:38:59.575062 [info ]: Cached model count updated: 16 models (accurate)
+10:39:01.166160 [info ]: Started loading project
+10:39:01.167067 [info ]: Loading ~/.dbt/profiles.yml
+10:39:01.202715 [info ]: Cached model count updated: 16 models (estimate)
+10:39:01.202745 [info ]: Cached model count updated: 16 models (accurate)
+10:39:01.202826 [info ]: Started scheduling
+10:39:01.203136 [info ]: Finished scheduling [  0.00s]
+10:39:01.203160 [debug]: Compilation - 15 nodes selected: {"analysis.project.customer_value", "analysis.project.pricing_analysis", "analysis.project.profitability", "analysis.project.revenue_trend", "analysis.project.supplier_performance", "model.project.fact_lineitem", "model.project.int_lineitem_enriched", "model.project.stg_customer", "model.project.stg_lineitem", "model.project.stg_nation", "model.project.stg_orders", "model.project.stg_part", "model.project.stg_partsupp", "model.project.stg_region", "model.project.stg_supplier"}
+10:39:01.455486 [info ]: Started building task graph
+10:39:01.455623 [info ]: Finished building task graph [  0.00s]
+10:39:01.455780 [info ]: Started rendering (15 nodes)
+10:39:01.455794 [info ]: Started analysis analytics_prod.supplier_performance
+10:39:01.455805 [debug]: Started rendering analysis analytics_prod.supplier_performance
+10:39:01.455824 [info ]: Started analysis analytics_prod.revenue_trend
+10:39:01.455831 [debug]: Started rendering analysis analytics_prod.revenue_trend
+10:39:01.455838 [info ]: Started analysis analytics_prod.profitability
+10:39:01.455841 [debug]: Started rendering analysis analytics_prod.profitability
+10:39:01.455847 [info ]: Started analysis analytics_prod.pricing_analysis
+10:39:01.455851 [debug]: Started rendering analysis analytics_prod.pricing_analysis
+10:39:01.455856 [info ]: Started analysis analytics_prod.customer_value
+10:39:01.455860 [debug]: Started rendering analysis analytics_prod.customer_value
+10:39:01.455866 [info ]: Started model analytics_prod.fact_lineitem
+10:39:01.455870 [debug]: Started rendering model analytics_prod.fact_lineitem
+10:39:01.455876 [info ]: Started model analytics_prod.int_lineitem_enriched
+10:39:01.455879 [debug]: Started rendering model analytics_prod.int_lineitem_enriched
+10:39:01.455885 [info ]: Started model analytics_prod.stg_supplier
+10:39:01.455888 [debug]: Started rendering model analytics_prod.stg_supplier
+10:39:01.455893 [info ]: Started model analytics_prod.stg_region
+10:39:01.455897 [debug]: Started rendering model analytics_prod.stg_region
+10:39:01.455902 [info ]: Started model analytics_prod.stg_partsupp
+10:39:01.455906 [debug]: Started rendering model analytics_prod.stg_partsupp
+10:39:01.455917 [info ]: Finished loading project [  0.29s]
+10:39:01.456023 [info ]: Started model analytics_prod.stg_part
+10:39:01.456041 [debug]: Started rendering model analytics_prod.stg_part
+10:39:01.456055 [info ]: Started model analytics_prod.stg_orders
+10:39:01.456060 [debug]: Started rendering model analytics_prod.stg_orders
+10:39:01.456068 [info ]: Started model analytics_prod.stg_nation
+10:39:01.456105 [debug]: Started rendering model analytics_prod.stg_nation
+10:39:01.456223 [info ]: Started model analytics_prod.stg_lineitem
+10:39:01.456289 [debug]: Started rendering model analytics_prod.stg_lineitem
+10:39:01.456327 [info ]: Started model analytics_prod.stg_customer
+10:39:01.456541 [debug]: Started rendering model analytics_prod.stg_customer
+10:39:01.458013 [debug]: Compiled SQL for node model.project.stg_region at target\.lsp\compiled\models\s1_staging\stg_region.sql
+10:39:01.458009 [debug]: Compiled SQL for node model.project.stg_supplier at target\.lsp\compiled\models\s1_staging\stg_supplier.sql
+10:39:01.458069 [debug]: Compiled SQL for node model.project.int_lineitem_enriched at target\.lsp\compiled\models\s2_intermediate\int_lineitem_enriched.sql
+10:39:01.458230 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_supplier [success]
+10:39:01.458278 [info ]: Started analyzing (15 nodes)
+10:39:01.458292 [debug]: Started analyzing model analytics_prod.stg_supplier
+10:39:01.458312 [debug]: Finished rendering [  0.00s] model analytics_prod.int_lineitem_enriched [success]
+10:39:01.458318 [debug]: Compiled SQL for node model.project.stg_lineitem at target\.lsp\compiled\models\s1_staging\stg_lineitem.sql
+10:39:01.458323 [debug]: Started analyzing model analytics_prod.int_lineitem_enriched
+10:39:01.458336 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_region [success]
+10:39:01.458343 [debug]: Started analyzing model analytics_prod.stg_region
+10:39:01.458572 [debug]: Compiled SQL for node model.project.stg_orders at target\.lsp\compiled\models\s1_staging\stg_orders.sql
+10:39:01.458718 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_lineitem [success]
+10:39:01.458743 [debug]: Started analyzing model analytics_prod.stg_lineitem
+10:39:01.458765 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_supplier (table)
+10:39:01.458781 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_supplier [success]
+10:39:01.458749 [debug]: Compiled SQL for node model.project.stg_part at target\.lsp\compiled\models\s1_staging\stg_part.sql
+10:39:01.458969 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_orders [success]
+10:39:01.458999 [debug]: Started analyzing model analytics_prod.stg_orders
+10:39:01.459023 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_part [success]
+10:39:01.459035 [debug]: Started analyzing model analytics_prod.stg_part
+10:39:01.459264 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_lineitem (table)
+10:39:01.459286 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_lineitem [success]
+10:39:01.459486 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_orders (table)
+10:39:01.459513 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_orders [success]
+10:39:01.459532 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_part (table)
+10:39:01.459545 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_part [success]
+10:39:01.459559 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_region (table)
+10:39:01.459572 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_region [success]
+10:39:01.459783 [debug]: Compiled SQL for node model.project.stg_nation at target\.lsp\compiled\models\s1_staging\stg_nation.sql
+10:39:01.459985 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_nation [success]
+10:39:01.460037 [debug]: Compiled SQL for node model.project.stg_partsupp at target\.lsp\compiled\models\s1_staging\stg_partsupp.sql
+10:39:01.460082 [debug]: Started analyzing model analytics_prod.stg_nation
+10:39:01.460135 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_partsupp [success]
+10:39:01.460176 [debug]: Started analyzing model analytics_prod.stg_partsupp
+10:39:01.460285 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_nation (table)
+10:39:01.460303 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_nation [success]
+10:39:01.460497 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_partsupp (table)
+10:39:01.460553 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_partsupp [success]
+10:39:01.461057 [debug]: Compiled SQL for node analysis.project.pricing_analysis at target\.lsp\compiled\analyses\pricing_analysis.sql
+10:39:01.461083 [debug]: Compiled SQL for node analysis.project.revenue_trend at target\.lsp\compiled\analyses\revenue_trend.sql
+10:39:01.461047 [debug]: Compiled SQL for node analysis.project.customer_value at target\.lsp\compiled\analyses\customer_value.sql
+10:39:01.461221 [debug]: Finished rendering [  0.01s] analysis analytics_prod.pricing_analysis [success]
+10:39:01.461252 [debug]: Started analyzing analysis analytics_prod.pricing_analysis
+10:39:01.461291 [debug]: Finished rendering [  0.01s] analysis analytics_prod.revenue_trend [success]
+10:39:01.461305 [debug]: Started analyzing analysis analytics_prod.revenue_trend
+10:39:01.461447 [debug]: Compiled SQL for node model.project.stg_customer at target\.lsp\compiled\models\s1_staging\stg_customer.sql
+10:39:01.461641 [info ]:  Succeeded [  0.01s] model analytics_prod.int_lineitem_enriched (view)
+10:39:01.461677 [debug]: Finished analyzing [  0.00s] model analytics_prod.int_lineitem_enriched [success]
+10:39:01.461703 [debug]: Finished rendering [  0.01s] analysis analytics_prod.customer_value [success]
+10:39:01.461717 [debug]: Started analyzing analysis analytics_prod.customer_value
+10:39:01.462499 [debug]: Compiled SQL for node analysis.project.profitability at target\.lsp\compiled\analyses\profitability.sql
+10:39:01.463518 [debug]: Compiled SQL for node analysis.project.supplier_performance at target\.lsp\compiled\analyses\supplier_performance.sql
+10:39:01.464748 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_customer [success]
+10:39:01.464803 [debug]: Started analyzing model analytics_prod.stg_customer
+10:39:01.464847 [debug]: Finished rendering [  0.01s] analysis analytics_prod.profitability [success]
+10:39:01.464863 [debug]: Started analyzing analysis analytics_prod.profitability
+10:39:01.465215 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_customer (table)
+10:39:01.465246 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_customer [success]
+10:39:01.465277 [debug]: Finished rendering [  0.01s] analysis analytics_prod.supplier_performance [success]
+10:39:01.465294 [debug]: Started analyzing analysis analytics_prod.supplier_performance
+10:39:01.466222 [info ]:  Succeeded [  0.01s] analysis analytics_prod.customer_value (analysis)
+10:39:01.466255 [debug]: Finished analyzing [  0.00s] analysis analytics_prod.customer_value [success]
+10:39:01.466640 [info ]:  Succeeded [  0.01s] analysis analytics_prod.profitability (analysis)
+10:39:01.466660 [debug]: Finished analyzing [  0.00s] analysis analytics_prod.profitability [success]
+10:39:01.466717 [info ]:  Succeeded [  0.01s] analysis analytics_prod.pricing_analysis (analysis)
+10:39:01.466728 [debug]: Finished analyzing [  0.01s] analysis analytics_prod.pricing_analysis [success]
+10:39:01.467445 [info ]:  Succeeded [  0.01s] analysis analytics_prod.revenue_trend (analysis)
+10:39:01.467469 [debug]: Finished analyzing [  0.01s] analysis analytics_prod.revenue_trend [success]
+10:39:01.467622 [info ]:  Succeeded [  0.01s] analysis analytics_prod.supplier_performance (analysis)
+10:39:01.467647 [debug]: Finished analyzing [  0.00s] analysis analytics_prod.supplier_performance [success]
+10:39:01.467945 [debug]: Compiled SQL for node model.project.fact_lineitem at target\.lsp\compiled\models\s3_marts\fact_lineitem.sql
+10:39:01.468085 [debug]: Finished rendering [  0.01s] model analytics_prod.fact_lineitem [success]
+10:39:01.468099 [info ]: Finished rendering [  0.01s] (15 nodes, 0 skipped, 0 errors)
+10:39:01.468122 [debug]: Started analyzing model analytics_prod.fact_lineitem
+10:39:01.468568 [info ]:  Succeeded [  0.01s] model analytics_prod.fact_lineitem (table)
+10:39:01.468598 [debug]: Finished analyzing [  0.00s] model analytics_prod.fact_lineitem [success]
+10:39:01.468606 [info ]: Finished analyzing [  0.01s] (15 nodes, 0 skipped, 0 errors)
+10:39:01.482001 [info ]: Started scheduling
+10:39:01.482124 [info ]: Finished scheduling [  0.00s]
+10:39:01.484490 [info ]: Cached model count updated: 16 models (accurate)
+10:39:03.043837 [info ]: Started loading project
+10:39:03.045009 [info ]: Loading ~/.dbt/profiles.yml
+10:39:03.080838 [info ]: Cached model count updated: 16 models (estimate)
+10:39:03.080868 [info ]: Cached model count updated: 16 models (accurate)
+10:39:03.080938 [info ]: Started scheduling
+10:39:03.081196 [info ]: Finished scheduling [  0.00s]
+10:39:03.081219 [debug]: Compilation - 21 nodes selected: {"analysis.project.customer_value", "analysis.project.pricing_analysis", "analysis.project.profitability", "analysis.project.revenue_trend", "analysis.project.supplier_performance", "model.project.dim_customer", "model.project.dim_date", "model.project.dim_location", "model.project.dim_part", "model.project.dim_part_supplier", "model.project.dim_supplier", "model.project.fact_lineitem", "model.project.int_lineitem_enriched", "model.project.stg_customer", "model.project.stg_lineitem", "model.project.stg_nation", "model.project.stg_orders", "model.project.stg_part", "model.project.stg_partsupp", "model.project.stg_region", "model.project.stg_supplier"}
+10:39:03.329282 [info ]: Started building task graph
+10:39:03.329485 [info ]: Finished building task graph [  0.00s]
+10:39:03.329679 [info ]: Started rendering (21 nodes)
+10:39:03.329697 [info ]: Started model analytics_prod.dim_part_supplier
+10:39:03.329710 [debug]: Started rendering model analytics_prod.dim_part_supplier
+10:39:03.329733 [info ]: Started model analytics_prod.dim_location
+10:39:03.329741 [debug]: Started rendering model analytics_prod.dim_location
+10:39:03.329749 [info ]: Started model analytics_prod.dim_date
+10:39:03.329753 [debug]: Started rendering model analytics_prod.dim_date
+10:39:03.329761 [info ]: Started analysis analytics_prod.supplier_performance
+10:39:03.329765 [debug]: Started rendering analysis analytics_prod.supplier_performance
+10:39:03.329773 [info ]: Started model analytics_prod.dim_supplier
+10:39:03.329777 [debug]: Started rendering model analytics_prod.dim_supplier
+10:39:03.329784 [info ]: Started analysis analytics_prod.revenue_trend
+10:39:03.329787 [debug]: Started rendering analysis analytics_prod.revenue_trend
+10:39:03.329780 [info ]: Finished loading project [  0.29s]
+10:39:03.329794 [info ]: Started analysis analytics_prod.profitability
+10:39:03.329798 [debug]: Started rendering analysis analytics_prod.profitability
+10:39:03.329805 [info ]: Started analysis analytics_prod.pricing_analysis
+10:39:03.329809 [debug]: Started rendering analysis analytics_prod.pricing_analysis
+10:39:03.329858 [info ]: Started model analytics_prod.dim_part
+10:39:03.329877 [debug]: Started rendering model analytics_prod.dim_part
+10:39:03.329898 [info ]: Started analysis analytics_prod.customer_value
+10:39:03.329909 [debug]: Started rendering analysis analytics_prod.customer_value
+10:39:03.329937 [info ]: Started model analytics_prod.fact_lineitem
+10:39:03.329975 [debug]: Started rendering model analytics_prod.fact_lineitem
+10:39:03.330038 [info ]: Started model analytics_prod.int_lineitem_enriched
+10:39:03.330089 [debug]: Started rendering model analytics_prod.int_lineitem_enriched
+10:39:03.330113 [info ]: Started model analytics_prod.stg_supplier
+10:39:03.330123 [debug]: Started rendering model analytics_prod.stg_supplier
+10:39:03.330199 [info ]: Started model analytics_prod.stg_partsupp
+10:39:03.330222 [debug]: Started rendering model analytics_prod.stg_partsupp
+10:39:03.330885 [info ]: Started model analytics_prod.stg_part
+10:39:03.330962 [debug]: Started rendering model analytics_prod.stg_part
+10:39:03.331272 [info ]: Started model analytics_prod.stg_orders
+10:39:03.331300 [debug]: Started rendering model analytics_prod.stg_orders
+10:39:03.331364 [info ]: Started model analytics_prod.stg_lineitem
+10:39:03.331380 [debug]: Started rendering model analytics_prod.stg_lineitem
+10:39:03.331396 [info ]: Started model analytics_prod.dim_customer
+10:39:03.331444 [debug]: Started rendering model analytics_prod.dim_customer
+10:39:03.331482 [info ]: Started model analytics_prod.stg_region
+10:39:03.331505 [debug]: Started rendering model analytics_prod.stg_region
+10:39:03.331519 [info ]: Started model analytics_prod.stg_nation
+10:39:03.331555 [debug]: Started rendering model analytics_prod.stg_nation
+10:39:03.331592 [info ]: Started model analytics_prod.stg_customer
+10:39:03.331634 [debug]: Started rendering model analytics_prod.stg_customer
+10:39:03.333054 [debug]: Compiled SQL for node model.project.fact_lineitem at target\.lsp\compiled\models\s3_marts\fact_lineitem.sql
+10:39:03.333083 [debug]: Compiled SQL for node analysis.project.profitability at target\.lsp\compiled\analyses\profitability.sql
+10:39:03.333139 [debug]: Finished rendering [  0.00s] model analytics_prod.fact_lineitem [success]
+10:39:03.333177 [info ]: Started analyzing (21 nodes)
+10:39:03.333190 [debug]: Started analyzing model analytics_prod.fact_lineitem
+10:39:03.333257 [debug]: Finished rendering [  0.00s] analysis analytics_prod.profitability [success]
+10:39:03.333305 [debug]: Started analyzing analysis analytics_prod.profitability
+10:39:03.333847 [info ]:  Succeeded [  0.00s] model analytics_prod.fact_lineitem (table)
+10:39:03.333898 [debug]: Finished analyzing [  0.00s] model analytics_prod.fact_lineitem [success]
+10:39:03.334071 [debug]: Compiled SQL for node analysis.project.pricing_analysis at target\.lsp\compiled\analyses\pricing_analysis.sql
+10:39:03.334080 [debug]: Compiled SQL for node model.project.stg_partsupp at target\.lsp\compiled\models\s1_staging\stg_partsupp.sql
+10:39:03.334117 [debug]: Compiled SQL for node analysis.project.customer_value at target\.lsp\compiled\analyses\customer_value.sql
+10:39:03.334156 [debug]: Finished rendering [  0.00s] analysis analytics_prod.pricing_analysis [success]
+10:39:03.334184 [debug]: Started analyzing analysis analytics_prod.pricing_analysis
+10:39:03.334318 [debug]: Compiled SQL for node analysis.project.supplier_performance at target\.lsp\compiled\analyses\supplier_performance.sql
+10:39:03.334418 [debug]: Compiled SQL for node analysis.project.revenue_trend at target\.lsp\compiled\analyses\revenue_trend.sql
+10:39:03.334458 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_partsupp [success]
+10:39:03.334491 [debug]: Started analyzing model analytics_prod.stg_partsupp
+10:39:03.334584 [debug]: Compiled SQL for node model.project.stg_part at target\.lsp\compiled\models\s1_staging\stg_part.sql
+10:39:03.334647 [debug]: Compiled SQL for node model.project.int_lineitem_enriched at target\.lsp\compiled\models\s2_intermediate\int_lineitem_enriched.sql
+10:39:03.334669 [debug]: Compiled SQL for node model.project.stg_customer at target\.lsp\compiled\models\s1_staging\stg_customer.sql
+10:39:03.334707 [debug]: Compiled SQL for node model.project.stg_nation at target\.lsp\compiled\models\s1_staging\stg_nation.sql
+10:39:03.334719 [debug]: Compiled SQL for node model.project.stg_region at target\.lsp\compiled\models\s1_staging\stg_region.sql
+10:39:03.334800 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_partsupp (table)
+10:39:03.334837 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_partsupp [success]
+10:39:03.334858 [debug]: Finished rendering [  0.00s] analysis analytics_prod.customer_value [success]
+10:39:03.334874 [debug]: Started analyzing analysis analytics_prod.customer_value
+10:39:03.334897 [debug]: Finished rendering [  0.01s] analysis analytics_prod.supplier_performance [success]
+10:39:03.334911 [debug]: Started analyzing analysis analytics_prod.supplier_performance
+10:39:03.334912 [debug]: Compiled SQL for node model.project.stg_supplier at target\.lsp\compiled\models\s1_staging\stg_supplier.sql
+10:39:03.334928 [debug]: Finished rendering [  0.01s] analysis analytics_prod.revenue_trend [success]
+10:39:03.334939 [debug]: Started analyzing analysis analytics_prod.revenue_trend
+10:39:03.334960 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_part [success]
+10:39:03.334973 [debug]: Started analyzing model analytics_prod.stg_part
+10:39:03.334993 [debug]: Finished rendering [  0.00s] model analytics_prod.int_lineitem_enriched [success]
+10:39:03.335006 [debug]: Started analyzing model analytics_prod.int_lineitem_enriched
+10:39:03.335029 [debug]: Started analyzing model analytics_prod.stg_customer
+10:39:03.335046 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_nation [success]
+10:39:03.335059 [debug]: Started analyzing model analytics_prod.stg_nation
+10:39:03.335075 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_region [success]
+10:39:03.335085 [debug]: Started analyzing model analytics_prod.stg_region
+10:39:03.335102 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_supplier [success]
+10:39:03.335113 [debug]: Started analyzing model analytics_prod.stg_supplier
+10:39:03.335202 [info ]:  Succeeded [  0.01s] analysis analytics_prod.revenue_trend (analysis)
+10:39:03.335226 [debug]: Finished analyzing [  0.00s] analysis analytics_prod.revenue_trend [success]
+10:39:03.335475 [info ]:  Succeeded [  0.01s] analysis analytics_prod.pricing_analysis (analysis)
+10:39:03.335487 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_customer [success]
+10:39:03.335497 [debug]: Finished analyzing [  0.00s] analysis analytics_prod.pricing_analysis [success]
+10:39:03.335512 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_part (table)
+10:39:03.335523 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_part [success]
+10:39:03.335650 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_nation (table)
+10:39:03.335669 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_nation [success]
+10:39:03.335704 [info ]:  Succeeded [  0.01s] analysis analytics_prod.profitability (analysis)
+10:39:03.335728 [debug]: Finished analyzing [  0.00s] analysis analytics_prod.profitability [success]
+10:39:03.335749 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_customer (table)
+10:39:03.335761 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_customer [success]
+10:39:03.335776 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_region (table)
+10:39:03.335788 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_region [success]
+10:39:03.335802 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_supplier (table)
+10:39:03.335815 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_supplier [success]
+10:39:03.336465 [info ]:  Succeeded [  0.01s] analysis analytics_prod.supplier_performance (analysis)
+10:39:03.336489 [debug]: Compiled SQL for node model.project.dim_part_supplier at target\.lsp\compiled\models\s3_marts\dim_part_supplier.sql
+10:39:03.336490 [debug]: Compiled SQL for node model.project.dim_part at target\.lsp\compiled\models\s3_marts\dim_part.sql
+10:39:03.336501 [debug]: Finished analyzing [  0.00s] analysis analytics_prod.supplier_performance [success]
+10:39:03.336702 [debug]: Finished rendering [  0.01s] model analytics_prod.dim_part_supplier [success]
+10:39:03.336740 [debug]: Started analyzing model analytics_prod.dim_part_supplier
+10:39:03.336969 [info ]:  Succeeded [  0.01s] model analytics_prod.dim_part_supplier (table)
+10:39:03.336991 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part_supplier [success]
+10:39:03.337024 [debug]: Finished rendering [  0.01s] model analytics_prod.dim_part [success]
+10:39:03.337010 [debug]: Compiled SQL for node model.project.dim_supplier at target\.lsp\compiled\models\s3_marts\dim_supplier.sql
+10:39:03.337057 [debug]: Started analyzing model analytics_prod.dim_part
+10:39:03.337116 [info ]:  Succeeded [  0.01s] analysis analytics_prod.customer_value (analysis)
+10:39:03.337140 [debug]: Finished analyzing [  0.00s] analysis analytics_prod.customer_value [success]
+10:39:03.337162 [debug]: Finished rendering [  0.01s] model analytics_prod.dim_supplier [success]
+10:39:03.337340 [debug]: Started analyzing model analytics_prod.dim_supplier
+10:39:03.337877 [info ]:  Succeeded [  0.01s] model analytics_prod.dim_part (table)
+10:39:03.337910 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part [success]
+10:39:03.339097 [info ]:  Succeeded [  0.01s] model analytics_prod.int_lineitem_enriched (view)
+10:39:03.339144 [debug]: Finished analyzing [  0.00s] model analytics_prod.int_lineitem_enriched [success]
+10:39:03.339120 [debug]: Compiled SQL for node model.project.stg_lineitem at target\.lsp\compiled\models\s1_staging\stg_lineitem.sql
+10:39:03.339177 [info ]:  Succeeded [  0.01s] model analytics_prod.dim_supplier (table)
+10:39:03.339195 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_supplier [success]
+10:39:03.339267 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_lineitem [success]
+10:39:03.339297 [debug]: Started analyzing model analytics_prod.stg_lineitem
+10:39:03.339898 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_lineitem (table)
+10:39:03.339943 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_lineitem [success]
+10:39:03.342943 [debug]: Compiled SQL for node model.project.dim_date at target\.lsp\compiled\models\s3_marts\dim_date.sql
+10:39:03.343057 [debug]: Compiled SQL for node model.project.dim_location at target\.lsp\compiled\models\s3_marts\dim_location.sql
+10:39:03.343885 [debug]: Compiled SQL for node model.project.dim_customer at target\.lsp\compiled\models\s3_marts\dim_customer.sql
+10:39:03.343938 [debug]: Compiled SQL for node model.project.stg_orders at target\.lsp\compiled\models\s1_staging\stg_orders.sql
+10:39:03.344740 [debug]: Finished rendering [  0.01s] model analytics_prod.dim_date [success]
+10:39:03.344808 [debug]: Started analyzing model analytics_prod.dim_date
+10:39:03.344847 [debug]: Finished rendering [  0.02s] model analytics_prod.dim_location [success]
+10:39:03.344896 [debug]: Started analyzing model analytics_prod.dim_location
+10:39:03.344927 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_orders [success]
+10:39:03.344943 [debug]: Started analyzing model analytics_prod.stg_orders
+10:39:03.344961 [debug]: Finished rendering [  0.01s] model analytics_prod.dim_customer [success]
+10:39:03.344968 [info ]: Finished rendering [  0.02s] (21 nodes, 0 skipped, 0 errors)
+10:39:03.344982 [debug]: Started analyzing model analytics_prod.dim_customer
+10:39:03.345741 [info ]:  Succeeded [  0.01s] model analytics_prod.dim_location (table)
+10:39:03.345774 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_location [success]
+10:39:03.345983 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_orders (table)
+10:39:03.345996 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_orders [success]
+10:39:03.346913 [info ]:  Succeeded [  0.01s] model analytics_prod.dim_customer (table)
+10:39:03.346938 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_customer [success]
+10:39:03.350184 [info ]:  Succeeded [  0.02s] model analytics_prod.dim_date (table)
+10:39:03.350234 [debug]: Finished analyzing [  0.01s] model analytics_prod.dim_date [success]
+10:39:03.350250 [info ]: Finished analyzing [  0.02s] (21 nodes, 0 skipped, 0 errors)
+10:39:03.359041 [info ]: Started scheduling
+10:39:03.359175 [info ]: Finished scheduling [  0.00s]
+10:39:03.362054 [info ]: Cached model count updated: 16 models (accurate)
+==================== 2026-04-27T08:10:54.249544Z | 2566fb23-b983-4ea8-bb45-0c8277f2762a ====================
+08:10:54.249629 [info ]: Starting dbt LSP server
+08:10:54.249677 [info ]: Connecting to LSP client on port 8000
+08:10:54.251275 [info ]: Successfully connected to LSP client
+08:10:54.251287 [info ]: Creating LSP service...
+08:10:54.302044 [info ]: Creating LSP server...
+08:10:54.302080 [info ]: Starting LSP server...
+08:10:55.715844 [info ]: Loading ~/.dbt/profiles.yml
+08:10:55.748307 [info ]: Started loading project
+08:10:55.749010 [info ]: Loading ~/.dbt/profiles.yml
+08:10:55.779461 [info ]: Loading packages.yml
+08:10:55.779966 [debug]:    Started loading packages
+08:10:55.827624 [debug]:     Loaded [  0.05s] packages
+08:10:55.828779 [info ]: Started parsing
+08:10:56.586494 [info ]: Finished loading project [  0.84s]
+08:10:56.603928 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.01s]
+08:10:56.618728 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.01s]
+08:10:56.629318 [debug]: Finished parsing models\s2_intermediate\_int_tpch.yml [  0.01s]
+08:10:56.640041 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.01s]
+08:10:56.656715 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.01s]
+08:10:56.666040 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.01s]
+08:10:56.679585 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.01s]
+08:10:56.700143 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.02s]
+08:10:56.714928 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.01s]
+08:10:56.727252 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.01s]
+08:10:56.739577 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.01s]
+08:10:56.751081 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.01s]
+08:10:56.762895 [debug]: Finished parsing models\s2_intermediate\int_lineitem_enriched.sql [  0.01s]
+08:10:56.771953 [debug]: Finished parsing models\s3_marts\dim_customer.sql [  0.01s]
+08:10:56.788018 [debug]: Finished parsing models\s3_marts\dim_date.sql [  0.02s]
+08:10:56.805105 [debug]: Finished parsing models\s3_marts\dim_location.sql [  0.02s]
+08:10:56.818446 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.01s]
+08:10:56.830163 [debug]: Finished parsing models\s3_marts\dim_part_supplier.sql [  0.01s]
+08:10:56.839487 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.01s]
+08:10:56.855799 [debug]: Finished parsing models\s3_marts\fact_lineitem.sql [  0.02s]
+08:10:56.868529 [debug]: Finished parsing analyses\customer_value.sql [  0.01s]
+08:10:56.880153 [debug]: Finished parsing analyses\pricing_analysis.sql [  0.01s]
+08:10:56.892195 [debug]: Finished parsing analyses\profitability.sql [  0.01s]
+08:10:56.907851 [debug]: Finished parsing analyses\revenue_trend.sql [  0.02s]
+08:10:56.923034 [debug]: Finished parsing analyses\supplier_performance.sql [  0.02s]
+08:10:56.924467 [info ]: Finished parsing [  1.10s]
+08:10:56.925559 [info ]: Cached model count updated: 16 models (estimate)
+08:10:56.925579 [info ]: Cached model count updated: 16 models (accurate)
+08:10:56.925687 [info ]: Started scheduling
+08:10:56.925869 [info ]: Finished scheduling [  0.00s]
+08:10:56.925897 [debug]: Compilation - 0 nodes selected: {}
+08:10:56.925930 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+08:10:56.925948 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+08:10:56.925964 [info ]: Started scheduling
+08:10:56.926135 [info ]: Finished scheduling [  0.00s]
+08:10:56.926299 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+08:10:56.926355 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+08:10:56.926371 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+08:10:56.926384 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+08:10:56.926403 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+08:10:56.926419 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+08:10:56.926435 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+08:10:56.926447 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+08:10:57.113113 [info ]: Started building task graph
+08:10:57.113215 [info ]: Finished building task graph [  0.00s]
+08:10:57.117453 [info ]: Started scheduling
+08:10:57.117528 [info ]: Finished scheduling [  0.00s]
+08:10:57.118374 [info ]: Cached model count updated: 16 models (accurate)
+08:10:58.687511 [info ]: Started loading project
+08:10:58.688294 [info ]: Loading ~/.dbt/profiles.yml
+08:10:58.719286 [info ]: Cached model count updated: 16 models (estimate)
+08:10:58.719318 [info ]: Cached model count updated: 16 models (accurate)
+08:10:58.719437 [info ]: Started scheduling
+08:10:58.719526 [info ]: Finished scheduling [  0.00s]
+08:10:58.719543 [debug]: Compilation - 0 nodes selected: {}
+08:10:58.719566 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+08:10:58.719580 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+08:10:59.023366 [info ]: Started building task graph
+08:10:59.023407 [info ]: Finished building task graph [  0.00s]
+08:10:59.030780 [info ]: Started scheduling
+08:10:59.030878 [info ]: Finished scheduling [  0.00s]
+08:10:59.031339 [info ]: Finished loading project [  0.34s]
+08:10:59.033266 [info ]: Cached model count updated: 16 models (accurate)
+08:11:00.654075 [info ]: Started loading project
+08:11:00.655161 [info ]: Loading ~/.dbt/profiles.yml
+08:11:00.690483 [info ]: Cached model count updated: 16 models (estimate)
+08:11:00.690513 [info ]: Cached model count updated: 16 models (accurate)
+08:11:00.690580 [info ]: Started scheduling
+08:11:00.690804 [info ]: Finished scheduling [  0.00s]
+08:11:00.690827 [debug]: Compilation - 21 nodes selected: {"analysis.project.customer_value", "analysis.project.pricing_analysis", "analysis.project.profitability", "analysis.project.revenue_trend", "analysis.project.supplier_performance", "model.project.dim_customer", "model.project.dim_date", "model.project.dim_location", "model.project.dim_part", "model.project.dim_part_supplier", "model.project.dim_supplier", "model.project.fact_lineitem", "model.project.int_lineitem_enriched", "model.project.stg_customer", "model.project.stg_lineitem", "model.project.stg_nation", "model.project.stg_orders", "model.project.stg_part", "model.project.stg_partsupp", "model.project.stg_region", "model.project.stg_supplier"}
+08:11:00.992398 [info ]: Started building task graph
+08:11:00.992697 [info ]: Finished building task graph [  0.00s]
+08:11:00.993032 [info ]: Started rendering (21 nodes)
+08:11:00.993098 [info ]: Started model analytics_prod.dim_part_supplier
+08:11:00.993162 [debug]: Started rendering model analytics_prod.dim_part_supplier
+08:11:00.993213 [info ]: Started model analytics_prod.dim_location
+08:11:00.993224 [debug]: Started rendering model analytics_prod.dim_location
+08:11:00.993235 [info ]: Started model analytics_prod.dim_date
+08:11:00.993243 [debug]: Started rendering model analytics_prod.dim_date
+08:11:00.993243 [info ]: Finished loading project [  0.34s]
+08:11:00.993330 [info ]: Started analysis analytics_prod.supplier_performance
+08:11:00.993366 [debug]: Started rendering analysis analytics_prod.supplier_performance
+08:11:00.993480 [info ]: Started model analytics_prod.dim_supplier
+08:11:00.993498 [debug]: Started rendering model analytics_prod.dim_supplier
+08:11:00.993515 [info ]: Started analysis analytics_prod.revenue_trend
+08:11:00.993524 [debug]: Started rendering analysis analytics_prod.revenue_trend
+08:11:00.993536 [info ]: Started analysis analytics_prod.profitability
+08:11:00.993547 [debug]: Started rendering analysis analytics_prod.profitability
+08:11:00.993558 [info ]: Started analysis analytics_prod.pricing_analysis
+08:11:00.993568 [debug]: Started rendering analysis analytics_prod.pricing_analysis
+08:11:00.993643 [info ]: Started model analytics_prod.dim_part
+08:11:00.993758 [debug]: Started rendering model analytics_prod.dim_part
+08:11:00.993781 [info ]: Started analysis analytics_prod.customer_value
+08:11:00.993803 [debug]: Started rendering analysis analytics_prod.customer_value
+08:11:00.993818 [info ]: Started model analytics_prod.fact_lineitem
+08:11:00.993837 [debug]: Started rendering model analytics_prod.fact_lineitem
+08:11:00.993850 [info ]: Started model analytics_prod.int_lineitem_enriched
+08:11:00.993861 [debug]: Started rendering model analytics_prod.int_lineitem_enriched
+08:11:00.993872 [info ]: Started model analytics_prod.stg_supplier
+08:11:00.993881 [debug]: Started rendering model analytics_prod.stg_supplier
+08:11:00.993892 [info ]: Started model analytics_prod.stg_partsupp
+08:11:00.993899 [debug]: Started rendering model analytics_prod.stg_partsupp
+08:11:00.993907 [info ]: Started model analytics_prod.stg_part
+08:11:00.993915 [debug]: Started rendering model analytics_prod.stg_part
+08:11:00.993929 [info ]: Started model analytics_prod.stg_orders
+08:11:00.993940 [debug]: Started rendering model analytics_prod.stg_orders
+08:11:00.993950 [info ]: Started model analytics_prod.stg_lineitem
+08:11:00.993957 [debug]: Started rendering model analytics_prod.stg_lineitem
+08:11:00.993974 [info ]: Started model analytics_prod.dim_customer
+08:11:00.993983 [debug]: Started rendering model analytics_prod.dim_customer
+08:11:00.993994 [info ]: Started model analytics_prod.stg_region
+08:11:00.994000 [debug]: Started rendering model analytics_prod.stg_region
+08:11:00.994011 [info ]: Started model analytics_prod.stg_nation
+08:11:00.994023 [debug]: Started rendering model analytics_prod.stg_nation
+08:11:00.994045 [info ]: Started model analytics_prod.stg_customer
+08:11:00.994055 [debug]: Started rendering model analytics_prod.stg_customer
+08:11:00.997838 [debug]: Compiled SQL for node analysis.project.pricing_analysis at target\.lsp\compiled\analyses\pricing_analysis.sql
+08:11:00.997849 [debug]: Compiled SQL for node model.project.dim_part at target\.lsp\compiled\models\s3_marts\dim_part.sql
+08:11:00.998066 [debug]: Compiled SQL for node model.project.stg_orders at target\.lsp\compiled\models\s1_staging\stg_orders.sql
+08:11:00.998242 [debug]: Compiled SQL for node model.project.dim_part_supplier at target\.lsp\compiled\models\s3_marts\dim_part_supplier.sql
+08:11:00.998785 [debug]: Compiled SQL for node analysis.project.profitability at target\.lsp\compiled\analyses\profitability.sql
+08:11:00.999205 [debug]: Finished rendering [  0.01s] analysis analytics_prod.pricing_analysis [success]
+08:11:00.999382 [debug]: Compiled SQL for node model.project.int_lineitem_enriched at target\.lsp\compiled\models\s2_intermediate\int_lineitem_enriched.sql
+08:11:00.999691 [debug]: Compiled SQL for node analysis.project.customer_value at target\.lsp\compiled\analyses\customer_value.sql
+08:11:01.000915 [info ]: Started analyzing (21 nodes)
+08:11:01.000953 [debug]: Started analyzing analysis analytics_prod.pricing_analysis
+08:11:01.001012 [debug]: Finished rendering [  0.01s] model analytics_prod.dim_part [success]
+08:11:01.001040 [debug]: Started analyzing model analytics_prod.dim_part
+08:11:01.001065 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_orders [success]
+08:11:01.001080 [debug]: Started analyzing model analytics_prod.stg_orders
+08:11:01.001102 [debug]: Finished rendering [  0.01s] model analytics_prod.dim_part_supplier [success]
+08:11:01.001114 [debug]: Started analyzing model analytics_prod.dim_part_supplier
+08:11:01.001134 [debug]: Finished rendering [  0.01s] analysis analytics_prod.profitability [success]
+08:11:01.001145 [debug]: Started analyzing analysis analytics_prod.profitability
+08:11:01.001164 [debug]: Finished rendering [  0.01s] analysis analytics_prod.customer_value [success]
+08:11:01.001173 [debug]: Started analyzing analysis analytics_prod.customer_value
+08:11:01.001215 [debug]: Finished rendering [  0.01s] model analytics_prod.int_lineitem_enriched [success]
+08:11:01.001243 [debug]: Started analyzing model analytics_prod.int_lineitem_enriched
+08:11:01.005704 [debug]: Compiled SQL for node analysis.project.revenue_trend at target\.lsp\compiled\analyses\revenue_trend.sql
+08:11:01.005911 [debug]: Finished rendering [  0.01s] analysis analytics_prod.revenue_trend [success]
+08:11:01.005966 [debug]: Started analyzing analysis analytics_prod.revenue_trend
+08:11:01.009441 [debug]: Compiled SQL for node model.project.stg_part at target\.lsp\compiled\models\s1_staging\stg_part.sql
+08:11:01.009570 [debug]: Compiled SQL for node model.project.dim_customer at target\.lsp\compiled\models\s3_marts\dim_customer.sql
+08:11:01.009880 [debug]: Finished rendering [  0.02s] model analytics_prod.stg_part [success]
+08:11:01.009942 [debug]: Compiled SQL for node model.project.stg_region at target\.lsp\compiled\models\s1_staging\stg_region.sql
+08:11:01.009950 [debug]: Started analyzing model analytics_prod.stg_part
+08:11:01.010898 [debug]: Finished rendering [  0.02s] model analytics_prod.dim_customer [success]
+08:11:01.011007 [debug]: Started analyzing model analytics_prod.dim_customer
+08:11:01.011093 [debug]: Compiled SQL for node model.project.stg_lineitem at target\.lsp\compiled\models\s1_staging\stg_lineitem.sql
+08:11:01.012045 [debug]: Compiled SQL for node model.project.dim_supplier at target\.lsp\compiled\models\s3_marts\dim_supplier.sql
+08:11:01.013101 [debug]: Compiled SQL for node model.project.fact_lineitem at target\.lsp\compiled\models\s3_marts\fact_lineitem.sql
+08:11:01.013705 [debug]: Finished rendering [  0.02s] model analytics_prod.stg_region [success]
+08:11:01.013760 [debug]: Started analyzing model analytics_prod.stg_region
+08:11:01.014251 [debug]: Compiled SQL for node model.project.stg_nation at target\.lsp\compiled\models\s1_staging\stg_nation.sql
+08:11:01.016780 [debug]: Finished rendering [  0.02s] model analytics_prod.stg_lineitem [success]
+08:11:01.016856 [debug]: Started analyzing model analytics_prod.stg_lineitem
+08:11:01.016925 [debug]: Finished rendering [  0.02s] model analytics_prod.dim_supplier [success]
+08:11:01.016962 [debug]: Started analyzing model analytics_prod.dim_supplier
+08:11:01.016987 [debug]: Finished rendering [  0.02s] model analytics_prod.fact_lineitem [success]
+08:11:01.017003 [debug]: Started analyzing model analytics_prod.fact_lineitem
+08:11:01.017037 [debug]: Finished rendering [  0.02s] model analytics_prod.stg_nation [success]
+08:11:01.017053 [debug]: Started analyzing model analytics_prod.stg_nation
+08:11:01.017854 [debug]: Compiled SQL for node model.project.dim_location at target\.lsp\compiled\models\s3_marts\dim_location.sql
+08:11:01.020503 [debug]: Compiled SQL for node model.project.dim_date at target\.lsp\compiled\models\s3_marts\dim_date.sql
+08:11:01.039753 [info ]:  Succeeded [  0.04s] model analytics_prod.stg_orders (table)
+08:11:01.039819 [debug]: Finished analyzing [  0.04s] model analytics_prod.stg_orders [success]
+08:11:01.039846 [info ]:  Succeeded [  0.04s] model analytics_prod.fact_lineitem (table)
+08:11:01.039859 [debug]: Finished analyzing [  0.02s] model analytics_prod.fact_lineitem [success]
+08:11:01.039877 [debug]: Finished rendering [  0.05s] model analytics_prod.dim_location [success]
+08:11:01.039907 [debug]: Started analyzing model analytics_prod.dim_location
+08:11:01.039930 [debug]: Finished rendering [  0.05s] model analytics_prod.dim_date [success]
+08:11:01.039939 [debug]: Started analyzing model analytics_prod.dim_date
+08:11:01.040149 [info ]:  Succeeded [  0.05s] model analytics_prod.stg_nation (table)
+08:11:01.040175 [debug]: Finished analyzing [  0.02s] model analytics_prod.stg_nation [success]
+08:11:01.040438 [debug]: Compiled SQL for node model.project.stg_customer at target\.lsp\compiled\models\s1_staging\stg_customer.sql
+08:11:01.040387 [info ]:  Succeeded [  0.04s] model analytics_prod.stg_part (table)
+08:11:01.040515 [debug]: Finished analyzing [  0.03s] model analytics_prod.stg_part [success]
+08:11:01.040590 [info ]:  Succeeded [  0.05s] model analytics_prod.dim_part (table)
+08:11:01.040616 [debug]: Finished analyzing [  0.04s] model analytics_prod.dim_part [success]
+08:11:01.040713 [debug]: Compiled SQL for node model.project.stg_partsupp at target\.lsp\compiled\models\s1_staging\stg_partsupp.sql
+08:11:01.041143 [debug]: Compiled SQL for node analysis.project.supplier_performance at target\.lsp\compiled\analyses\supplier_performance.sql
+08:11:01.041558 [info ]:  Succeeded [  0.05s] model analytics_prod.dim_part_supplier (table)
+08:11:01.041593 [debug]: Finished analyzing [  0.04s] model analytics_prod.dim_part_supplier [success]
+08:11:01.041655 [debug]: Finished rendering [  0.05s] analysis analytics_prod.supplier_performance [success]
+08:11:01.041695 [debug]: Started analyzing analysis analytics_prod.supplier_performance
+08:11:01.041730 [debug]: Finished rendering [  0.05s] model analytics_prod.stg_partsupp [success]
+08:11:01.041739 [debug]: Started analyzing model analytics_prod.stg_partsupp
+08:11:01.042072 [info ]:  Succeeded [  0.05s] model analytics_prod.stg_partsupp (table)
+08:11:01.042105 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_partsupp [success]
+08:11:01.042506 [debug]: Compiled SQL for node model.project.stg_supplier at target\.lsp\compiled\models\s1_staging\stg_supplier.sql
+08:11:01.042650 [debug]: Finished rendering [  0.05s] model analytics_prod.stg_supplier [success]
+08:11:01.042689 [debug]: Started analyzing model analytics_prod.stg_supplier
+08:11:01.042724 [debug]: Finished rendering [  0.05s] model analytics_prod.stg_customer [success]
+08:11:01.042733 [info ]: Finished rendering [  0.05s] (21 nodes, 0 skipped, 0 errors)
+08:11:01.042750 [debug]: Started analyzing model analytics_prod.stg_customer
+08:11:01.042986 [info ]:  Succeeded [  0.05s] model analytics_prod.stg_lineitem (table)
+08:11:01.043023 [debug]: Finished analyzing [  0.03s] model analytics_prod.stg_lineitem [success]
+08:11:01.043044 [info ]:  Succeeded [  0.05s] model analytics_prod.stg_customer (table)
+08:11:01.043061 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_customer [success]
+08:11:01.044567 [info ]:  Succeeded [  0.05s] model analytics_prod.dim_supplier (table)
+08:11:01.044608 [debug]: Finished analyzing [  0.03s] model analytics_prod.dim_supplier [success]
+08:11:01.044628 [info ]:  Succeeded [  0.05s] model analytics_prod.dim_customer (table)
+08:11:01.044637 [debug]: Finished analyzing [  0.03s] model analytics_prod.dim_customer [success]
+08:11:01.044650 [info ]:  Succeeded [  0.05s] analysis analytics_prod.revenue_trend (analysis)
+08:11:01.044658 [debug]: Finished analyzing [  0.04s] analysis analytics_prod.revenue_trend [success]
+08:11:01.045005 [info ]:  Succeeded [  0.05s] model analytics_prod.dim_location (table)
+08:11:01.045022 [debug]: Finished analyzing [  0.01s] model analytics_prod.dim_location [success]
+08:11:01.046727 [info ]:  Succeeded [  0.05s] model analytics_prod.stg_supplier (table)
+08:11:01.046769 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_supplier [success]
+08:11:01.046855 [info ]:  Succeeded [  0.05s] analysis analytics_prod.supplier_performance (analysis)
+08:11:01.046869 [debug]: Finished analyzing [  0.01s] analysis analytics_prod.supplier_performance [success]
+08:11:01.046884 [info ]:  Succeeded [  0.05s] analysis analytics_prod.profitability (analysis)
+08:11:01.046894 [debug]: Finished analyzing [  0.05s] analysis analytics_prod.profitability [success]
+08:11:01.049752 [info ]:  Succeeded [  0.05s] model analytics_prod.stg_region (table)
+08:11:01.049807 [debug]: Finished analyzing [  0.04s] model analytics_prod.stg_region [success]
+08:11:01.053776 [info ]:  Succeeded [  0.06s] model analytics_prod.dim_date (table)
+08:11:01.053834 [debug]: Finished analyzing [  0.01s] model analytics_prod.dim_date [success]
+08:11:01.059783 [info ]:  Succeeded [  0.06s] analysis analytics_prod.customer_value (analysis)
+08:11:01.059865 [debug]: Finished analyzing [  0.06s] analysis analytics_prod.customer_value [success]
+08:11:01.060036 [info ]:  Succeeded [  0.06s] analysis analytics_prod.pricing_analysis (analysis)
+08:11:01.060070 [debug]: Finished analyzing [  0.06s] analysis analytics_prod.pricing_analysis [success]
+08:11:01.060905 [info ]:  Succeeded [  0.07s] model analytics_prod.int_lineitem_enriched (view)
+08:11:01.060940 [debug]: Finished analyzing [  0.06s] model analytics_prod.int_lineitem_enriched [success]
+08:11:01.060949 [info ]: Finished analyzing [  0.06s] (21 nodes, 0 skipped, 0 errors)
+08:11:01.069014 [info ]: Started scheduling
+08:11:01.069146 [info ]: Finished scheduling [  0.00s]
+08:11:01.071363 [info ]: Cached model count updated: 16 models (accurate)

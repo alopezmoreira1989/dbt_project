@@ -1,18 +1,23 @@
-select
+with source as (
 
-    order_date as date
+    select order_date
+    from {{ ref('stg_orders') }}
 
-    --basics
-    , extract(year from order_date) as year
-    , extract(month from order_date) as month
-    , extract(day from order_date) as day
+)
 
-    --week
-    , extract(week from order_date) as week
-    , extract(dayofweek from order_date) as day_of_week
+, final as (
 
-    --others
-    , date_trunc('month', order_date) as month_start
-    , date_trunc('year', order_date) as year_start
+    select
+        order_date as date
+        , extract(year from order_date) as year
+        , extract(month from order_date) as month
+        , extract(day from order_date) as day
+        , extract(week from order_date) as week
+        , extract(dayofweek from order_date) as day_of_week
+        , date_trunc('month', order_date) as month_start
+        , date_trunc('year', order_date) as year_start
+    from source
 
-from {{ ref ('stg_orders') }}
+)
+
+select * from final
