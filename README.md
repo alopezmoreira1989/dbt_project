@@ -6,6 +6,40 @@ The goal of the project is to demonstrate a realistic, production-style dbt work
 
 ---
 
+## Overview
+
+This project simulates a production-ready data transformation layer using dbt on Snowflake.
+
+The goal is to transform raw data into clean, well-structured analytical models following best practices in modern data stacks.
+
+---
+
+## Why dbt?
+
+dbt allows transforming data using software engineering best practices:
+
+- Version control
+- Testing
+- Documentation
+- Modular design
+
+This makes data pipelines more robust and production-ready.
+
+---
+
+## Architecture
+
+The project is structured into three main layers:
+
+- **Staging**: Cleans and standardizes raw data sources
+- **Intermediate**: Applies business logic and transformations
+- **Marts**: Final analytical tables optimized for reporting and analysis
+
+This layered approach ensures modularity, scalability, and maintainability.
+
+
+---
+
 ## Stack
 
 | Layer | Tool |
